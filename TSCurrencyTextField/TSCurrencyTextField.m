@@ -46,7 +46,7 @@
     _invalidInputCharacterSet = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
 
     _currencyNumberFormatter = [[NSNumberFormatter alloc] init];
-    _currencyNumberFormatter.locale = [NSLocale currentLocale];
+    _currencyNumberFormatter.locale = [NSLocale localeWithLocaleIdentifier:@"en_US"];
     _currencyNumberFormatter.numberStyle = kCFNumberFormatterCurrencyStyle;
     _currencyNumberFormatter.usesGroupingSeparator = YES;
     
